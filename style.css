@@ -172,26 +172,23 @@ main{
     padding: 2vh;
     border-bottom: 1px solid black;
     overflow: hidden;
-    position: relative;
+  position: relative;
 }
-
-#technology-carousel img{
+#technology-carousel img {
     width: auto;
     height: 100%;
-}
-
-#technology-carousel::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    animation: carousel 20s linear infinite;
-}
-
-@keyframes carousel {
-    from {transform: translateX(0)}
-    to {transform: translateX(-100%)}
-}
+    top:0;
+    left:inherit;
+    animation: slide; 
+  }
+  
+  @keyframes carousel {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
