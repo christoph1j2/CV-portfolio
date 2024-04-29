@@ -1,0 +1,87 @@
+/*    general    */
+*{
+    transition: 100ms;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*    header-navbar    */
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    background-color: #444444;
+    color:white;
+}
+
+header h1{
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 500;
+    transform: translateX(150%);
+}
+
+header ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header ul img {
+    height: 4vh;
+}
+header li {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+#links li:hover{
+    background-color: #df3906;
+}
+
+#links{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+}
+#links li{
+    padding: 3vh;
+    margin: 0;
+    border-left: 1px solid rgba(0, 0, 0, 0.185);
+    
+}
+#links li:last-child{
+    border-right:1px solid rgba(0, 0, 0, 0.185);
+}
+#lang{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+    padding: 3vh;
+    border-left: 1px solid rgba(0, 0, 0, 0.185);
+}
+#lang li:hover{
+    box-shadow: inset 0 0 0 6px #ffe5de8a;
+    border-radius: .5rem;
+}
+/*    main    */
+main{
+    height: 89vh;
+    border-bottom: 1px solid black;
+    
+}
+.particles-and-nodes {
+    position: relative; /* Ensures canvas fills the entire section */
+    height: 90vh; /* Sets the section height to 90% of the viewport */
+}
+  
