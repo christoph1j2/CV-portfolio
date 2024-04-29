@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <style>
+    #banner {
+      position: relative;
+      background-image: url("bg.jpg"); /* Replace with your image path */
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    }
+
+    #banner div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: fit-content;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      filter: none;
+      -webkit-filter: none;
+    }
+  </style>
+</head>
+<body>
+  <main id="banner" class="particles-and-nodes">
+    <div>
+      <img src="logo.png" alt="logo">
+      <h1>ERNST CHRISTOPH LESCHKA</h1>
+    </div>
+  </main>
+</body>
+</html>

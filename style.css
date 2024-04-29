@@ -1,6 +1,7 @@
 /*    general    */
 *{
     transition: 100ms;
+    box-sizing: border-box;
 }
 
 html{
@@ -81,7 +82,48 @@ main{
     
 }
 .particles-and-nodes {
-    position: relative; /* Ensures canvas fills the entire section */
-    height: 90vh; /* Sets the section height to 90% of the viewport */
+    position: relative;
+    height: 90vh;
+}
+#hero{ 
+    position: relative;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:blur(8px);
+    color: white;
+}
+
+#banner{
+    
+}
+
+#hero div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter:none;
+}
+
+#hero canvas {
+    max-width: 100%;
+}
+
+#hero .banner-content,
+#hero canvas{
+    filter:none;
+    -webkit-filter: none;
+}
+
+#hero img{
+    height: 20vh;
+    width: 20vh;
+    margin-bottom: 2.5vh;
 }
   
