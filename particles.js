@@ -11,8 +11,8 @@ canvas.height = canvas.parentNode.offsetHeight;
 
 // Variables to control particle properties
 const numParticles = 100; // Adjust for desired particle density
-const particleRadius = 3; // Adjust for particle size
-const colors = ['#fff', '#ccc', '#999']; // Array of particle colors
+const particleRadius = 5; // Adjust for particle size
+const colors = ['#fffff', '#ccc', '#8B287F', '#ADADAD','#C9483A','#48338A']; // Array of particle colors
 
 // Function to create a particle object
 function createParticle() {

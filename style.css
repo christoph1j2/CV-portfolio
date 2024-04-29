@@ -85,20 +85,16 @@ main{
     position: relative;
     height: 90vh;
 }
-#hero{ 
+#banner{ 
     position: relative;
     background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter:blur(8px);
+
     color: white;
 }
 
-#banner{
-    
-}
-
-#hero div{
+#banner div{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,19 +107,21 @@ main{
     filter:none;
 }
 
-#hero canvas {
+#banner canvas {
+    height: 100%;
     max-width: 100%;
+    backdrop-filter: blur(10px);
 }
 
-#hero .banner-content,
-#hero canvas{
-    filter:none;
-    -webkit-filter: none;
-}
 
-#hero img{
+#banner img{
     height: 20vh;
     width: 20vh;
     margin-bottom: 2.5vh;
 }
-  
+
+.banner-content h2{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: .5vh;
+}
