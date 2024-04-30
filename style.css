@@ -240,6 +240,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: black 1px solid;
 }
 #soft h2{
     padding: 0.5vh;
@@ -250,4 +251,34 @@ main{
     margin: 1.2vh;
     margin-top: 3vh;
     margin-bottom: 3vh;
+}
+
+/*   portfolio   */
+#portfolio{
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 10vh;
+    background: linear-gradient(90deg,#2e2e2e 0%,#3d3d3d 20%,#3d3d3d 80%,#2e2e2e 100%);
+    border-bottom: 1px solid black;
+}
+.carousel-item img {
+    height: 60vh;
+}
+.carousel-item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item p{
+    text-align: center;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:1vh
+}
+#portfolio h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    color:#a7a7a7
 }
