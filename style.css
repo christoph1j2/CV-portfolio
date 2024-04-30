@@ -141,7 +141,7 @@ main{
 }
 #about-me a{
     text-decoration: none;
-    color: #9c9c9c;
+    color: #c9c9c9;
 }
 #about-me a:visited{
     text-decoration: none;
@@ -162,33 +162,73 @@ main{
 }
 
 /*    carousel   */
+/*https://codepen.io/studiojvla/pen/qVbQqW?editors=0100*/
 
-/*TODO*/
 #technology-carousel{
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #2e2e2e;
     padding: 2vh;
     border-bottom: 1px solid black;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    margin: auto;
     overflow: hidden;
-  position: relative;
+    position: relative;
 }
-#technology-carousel img {
-    width: auto;
-    height: 100%;
+#technology-carousel::before,
+#technology-carousel::after {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 10vh;
     position: absolute;
+    z-index: 2;
+}
+#technology-carousel::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+#technology-carousel::before{
+    left:0;
     top:0;
-    left:inherit;
-    animation: slide; 
-  }
-  
-  @keyframes carousel {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-  }
-  
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
+}
+
+.slide-track{
+    animation:scroll 10s alternate infinite;
+    display: flex;
+    width: calc(5vw*14);
+}
+.slide-track img{
+    height: 10vh;
+    width: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(calc(-4vw));
+    }
+    100%{
+        transform: translateX(calc(-2.5vw*7));
+    }
+}
+
+/*    tech     */
+#tech{
+    background: linear-gradient(90deg,#2e2e2e 0%,#3d3d3d 50%,#2e2e2e 70%);
+}
+#tech h1{
+    padding: 2.5vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.text_firstLine{
+    display: flex;
+    justify-content: center;
+}.text_secondLine{
+    display: flex;
+    justify-content: center;
+}
