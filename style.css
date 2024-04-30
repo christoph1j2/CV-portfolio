@@ -94,6 +94,7 @@ main{
     color: white;
 }
 
+
 #banner div{
     position: absolute;
     top: 50%;
@@ -120,12 +121,67 @@ main{
     margin-bottom: 2.5vh;
 }
 
-.banner-content h2{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+.banner-content {
+    display: grid;
+    grid-template-rows: auto 1fr;  /* Adjust row heights as needed */
+    align-items: center;
+    text-align: center;  /* Center content horizontally */
+  }
+
+
+
+/*https://codepen.io/geoffgraham/pen/jrWwWM*/
+#typewriter h2{
     padding: .5vh;
+
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    margin: 0 auto;
+    z-index: 10;
+    animation: 
+        typing 3.5s steps(30, end) alternate infinite,
+        blink-caret .5s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+    }
+
+
+#scroll-down{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
 }
 
+#scroll-down:hover{
+    opacity: 1;
+}
+
+.fas.fa-chevron-down{
+    font-size: 2rem;
+    color: white;
+}
 
 /*    about-me   */
 #about-me{
@@ -444,4 +500,32 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: #cecccc;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    width: 40px;
+    height: 40px;
+    background-color: #dddddd00;
+    border-radius: 50%;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.back-to-top::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ddd;
+    border-left: 15px solid transparent;
+}
+
+.back-to-top:hover{
+    background-color: #aaaaaa59;
 }
