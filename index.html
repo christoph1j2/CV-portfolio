@@ -162,15 +162,44 @@
         </button>
       </section>
     <section id="contact">
-        <div class="links">
-
-        </div>
+        <!--https://codepen.io/Gogh/pen/gOqVqBx -->
         <div class="form">
-            
+            <div class="ring">
+                <i style="--clr:#ffffff;"></i>
+                <i style="--clr:#ff0057;"></i>
+                <i style="--clr:#fffd44;"></i>
+                <div class="login">
+                    <form action="mailto:leschkae@spseplzen.cz" method="post" enctype="text/plain">
+                    <h2>Contact Me</h2>
+                    <div class="inputBx">
+                        <input type="email" placeholder="email@domain.net">
+                    </div>
+                    <div class="inputBx">
+                        <textarea id="textarea" name="contact" rows="4" style="width:300px" placeholder="Message here..."></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Send">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div><img src="images/light/linkedin.png" alt=""><a href="https://www.linkedin.com/in/ernst-christoph-leschka-52385421b/">LinkedIn</a></div>
+            <div><img src="images/light/instagram.png" alt=""><a href="https://www.instagram.com/christoph1j2">Instagram</a></div>
+            <div><img src="images/light/twitter.png" alt=""><a href="https://www.twitter.com/christoph1j2">TwitterX</a></div>
         </div>
     </section>
     <footer>
-
+        <p>© <span id="year">2024</span> ECL <a href="attributes.html">Attributions</a></p>
     </footer>
+    <script>
+        function year() {
+            const date = new Date();
+            let year = date.getFullYear();
+            console.log(year);
+            document.getElementById('year').innerHTML = year;
+        }
+    </script>
 </body>
 </html>
