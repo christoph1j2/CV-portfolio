@@ -217,18 +217,37 @@ main{
 
 /*    tech     */
 #tech{
-    background: linear-gradient(90deg,#2e2e2e 0%,#3d3d3d 50%,#2e2e2e 70%);
+    background: linear-gradient(90deg,#2e2e2e 0%,#3d3d3d 20%,#3d3d3d 80%,#2e2e2e 100%);
+    border-bottom: black 1px solid;
 }
 #tech h1{
     padding: 2.5vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
-
 .text_firstLine{
     display: flex;
     justify-content: center;
 }.text_secondLine{
     display: flex;
     justify-content: center;
+}
+
+/*    soft     */
+#soft{
+    height: 30vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#soft h2{
+    padding: 0.5vh;
+    color: #ffffff;
+    font-weight: 100;
+}
+.progress{
+    margin: 1.2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
