@@ -289,6 +289,45 @@ main{
     justify-content: center;
 }
 
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center; /* Center text horizontally */
+    opacity: 0.1; /* Initially hide the text */
+    overflow: hidden;
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: opacity 0.5 ease-in-out;
+  }
+  
+  .card:hover .card-text {
+    display: block;
+    opacity: 1; /* Reveal text on hover with smooth transition */
+    color: white;
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .card:hover .card-img {
+    opacity: 0; /* Reveal text on hover with smooth transition */
+    transition: opacity 0.5s ease-in-out;;
+  }
+  .card-img{
+    transition: opacity 0.5s ease-in-out;
+  }
+
 /*    soft     */
 #soft{
     height: 30vh;
