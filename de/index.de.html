@@ -3,9 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ECL Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <p>asdfsadf</p>
+    <header id="header">
+        <h1 style="font-family:'Courier New', Courier, monospace;">ECL</h1>
+        <nav id="links">
+            <ul>
+                <li><a href="#header"><img src="../images/light/home.png" alt="hdr-ico"></a></li>
+                <li><a href="#about-me"><img src="../images/light/user.png" alt="about-ico"></a></li>
+                <li><a href="#portfolio"><img src="../images/light/globe.png" alt="skills-ico"></a></li>
+                <li><a href="#contact"><img src="../images/light/phone-call.png" alt="contact-ico"></a></li>
+            </ul>
+        </nav>
+        <nav id="lang">
+            <ul>
+                <li><a href="../index.html"><img src="../images/united-kingdom.png" alt="en"></a></li>
+                <li><a href="../cs/index.cs.html"><img src="../images/czech-republic.png" alt="cs"></a></li>
+                <li><a href="index.de.html"><img src="../images/germany.png" alt="de"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="banner" class="particles-and-nodes">
+        <canvas id="particles-canvas"></canvas>
+        <div class="banner-content">
+            <!--logo prone to change:> digga ich bin keinen Grafikdesigner-->
+            <img src="../images/logo.png" alt="logo">
+            <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ERNST CHRISTOPH LESCHKA</h1>
+            <span id="typewriter"><h2>Willkommen in meinem Portfolio</h2></span>
+        </div>
+        <div id="scroll-down">
+            <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </main>
+    <script src="../particles.js"></script>
+    <section id="about-me">
+        <h5 style="color:#a7a7a7;">ABOUT</h5>
+        <p>Mein Name ist Ernst Christoph Leschka. Ich bin ein IT-Student aus Tschechien mit einer Leidenschaft für alles, was mit Computern zu tun hat. Meine Spezialgebiete sind Webentwicklung und Softwareentwicklung - aber ich liebe auch andere Bereiche wie IoT! Ich habe Erfahrung mit einer Vielzahl von Technologien, darunter HTML, CSS, JavaScript, PHP, MySQL und Java. Ich spreche fließend Englisch und Tschechisch und bemühe mich derzeit, auch Deutsch fließend zu beherrschen. In diesem Portfolio können Sie Beispiele meiner Arbeit finden, mehr über meine Fähigkeiten erfahren und mit mir in Kontakt treten. Ich lerne und entwickle mich ständig weiter und bin gespannt, was ich in Zukunft noch alles schaffen kann! Wenn Sie Fragen haben oder etwas besprechen möchten, können Sie mich gerne kontaktieren.</p>
+        <div>
+        <p>
+        <img src="../images/light/print.png" alt="print"><a href="Leschka CV.pdf" target="_blank">Print CV</a>
+        </p>
+        <p>
+        <img src="../images/light/download.png" alt="download"><a href="Leschka CV.pdf" download="Leschka_CV.pdf">Download CV</a>
+        </p>
+        </div>
+    </section>
+    <section id="technology-carousel">
+        <!--  beeindrucken, also warum nicht  -->
+        <div class="slide-track">
+            <img src="../images/html-logo.png" alt="html">
+            <img src="../images/css-logo.png" alt="css">
+            <img src="../images/js-logo.png" alt="JavaScript">
+            <img src="../images/php-logo.png" alt="php">
+            <img src="../images/mysql-logo.png" alt="mysql">
+            <img src="../images/java-logo.png" alt="java">
+        </div>
+    </section>
+    <section id="skills">
+        <section id="skills">
+            <article id="tech">
+              <h1 style="color:#a7a7a7">FÄHIGKEITEN</h1>
+              <div class="text_firstLine">
+                <div id="tech-html" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/html-logo.png" style="width: 9vw;" alt="HTML-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>HTML:</b> Ich verfüge über 3 Jahre umfassende Erfahrung mit HTML, der Grundlage für den Aufbau von Webseitenstrukturen und Inhalten.
+                  </div>
+                </div>
+                <div id="tech-css" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/css-logo.png" style="width: 9vw;" alt="CSS-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>CSS:</b> Ich verfüge über 3 Jahre gute Erfahrung mit CSS, 
+                    um die visuelle Darstellung von Webseiten zu gestalten.
+                  </div>
+                </div>
+                <div id="tech-js" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/js-logo.png" style="width: 9vw;" alt="JS-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>JavaScript:</b> Ich verfüge über 2 Jahre praktische Kenntnisse in JavaScript, 
+                    um Webseiten Interaktivität und dynamisches Verhalten zu verleihen.
+                  </div>
+                </div>
+              </div>
+              <div class="text_secondLine">
+                <div id="tech-php" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/php-logo.png" style="width: 9vw;" alt="PHP-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>PHP:</b> Grundkenntnisse in PHP, ich arbeite seit 1 Jahr damit, 
+                    einer serverseitigen Skriptsprache zum Erstellen dynamischer Webinhalte.
+                  </div>
+                </div>
+                <div id="tech-mysql" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/mysql-logo.png" style="width: 9vw;" alt="MySQL-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>MySQL:</b> Grundkenntnisse von MySQL, ich arbeite seit etwas mehr als 1 Jahr damit, 
+                    einem beliebten relationalen Datenbankmanagementsystem.
+                  </div>
+                </div>
+                <div id="tech-java" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/java-logo.png" style="width: 8vw;" alt="Java-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>Java:</b> Ich verfüge über 2 Jahre Erfahrung mit Java, einer vielseitigen Programmiersprache für verschiedene Anwendungen.
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          
+        <article id="soft">
+            <div>
+                <h2>Tschechisch</h2>
+                <h2>Englisch</h2>
+                <h2>Deutsch</h2>
+            </div>
+            <div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(214, 76, 76);" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100">B2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(0, 112, 177);" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100">C1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(169, 5, 202);" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100">C2</div>
+                </div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(214, 76, 76);" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100">B2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(0, 112, 177);" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100">C1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #454545;" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #8c8c8c;" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #bfbfbf;" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #454545;" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="portfolio" class="carousel slide" data-bs-ride="carousel">
+        <h1>PROJEKTE</h1>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img src="../images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
+            <p>Project Placeholder</p>
+          </div>
+          <div class="carousel-item">
+            <a href="https://zdenkalindenbergova.cz/"><img src="../images/portfolio/1.png" alt="ZL" class="d-block img-fluid"></a>
+            <p>Coaching-Portfolio-Website</p>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="../images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
+            <p>Project Placeholder</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolio" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolio" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+      </section>
+    <section id="contact">
+        <!--https://codepen.io/Gogh/pen/gOqVqBx -->
+        <div class="form">
+            <div class="ring">
+                <i style="--clr:#ffffff;"></i>
+                <i style="--clr:#ff0057;"></i>
+                <i style="--clr:#fffd44;"></i>
+                <div class="login">
+                    <form action="mailto:leschkae@spseplzen.cz" method="post" enctype="text/plain">
+                    <h2>Kontaktieren Mich</h2>
+                    <div class="inputBx">
+                        <input type="email" placeholder="email@domain.net">
+                    </div>
+                    <div class="inputBx">
+                        <textarea id="textarea" name="contact" rows="4" style="width:300px" placeholder="Nachricht hier..."></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Senden">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div><img src="../images/light/linkedin.png" alt=""><a href="https://www.linkedin.com/in/ernst-christoph-leschka-52385421b/">LinkedIn</a></div>
+            <div><img src="../images/light/instagram.png" alt=""><a href="https://www.instagram.com/christoph1j2">Instagram</a></div>
+            <div><img src="../images/light/twitter.png" alt=""><a href="https://www.twitter.com/christoph1j2">TwitterX</a></div>
+        </div>
+    </section>
+    <footer>
+        <p>© <span id="year">2024</span> ECL <a href="../attributes.html">Attributions</a></p>
+    </footer>
+    <a href="#" class="back-to-top"></a>
+    <script>
+        function year() {
+            const date = new Date();
+            let year = date.getFullYear();
+            console.log(year);
+            document.getElementById('year').innerHTML = year;
+        }
+    </script>
+    <script>
+        const textContainer = document.getElementById("typewriter");
+        let string = ['Web-Entwicklung','Software-Entwicklung','Datenbankmanagement','Frontend-Entwicklung','Backend-Entwicklung'];
+        i=0;
+                    
+            function changeText(){
+            console.log("jetzt");
+                textContainer.innerHTML = '<h2>'+string[i]+'</h2>';
+                i++;
+                    if(i===5){
+                        i=0;
+                    } 
+                }
+            const intervalId = setInterval(changeText,7000);
+    </script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

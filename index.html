@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECL Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
     <header id="header">
@@ -61,19 +59,19 @@
             <img src="images/html-logo.png" alt="html">
             <img src="images/css-logo.png" alt="css">
             <img src="images/js-logo.png" alt="JavaScript">
-            <img src="images/php-logo.png" alt="php">
-            <img src="images/mysql-logo.png" alt="mysql">
-            <img src="images/java-logo.png" alt="java">
+            <img src="images/php-logo.png" alt="php" id="php">
+            <img src="images/mysql-logo.png" alt="mysql" id="sql">
+            <img src="images/java-logo.png" alt="java" id="java">
         </div>
     </section>
     <section id="skills">
-        <!-- TODO: ADD ANIMATIONS ONMOUSEHOVER, REVEALS EXPERIENCE -->
         <article id="tech">
             <h1 style="color:#a7a7a7">TECHNOLOGY</h1>
+            <div class="tech-container">
             <div class="text_firstLine">
                 <div id="tech-html" class="card bg-dark p-3 m-3" style="width: 18rem;">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/html-logo.png" style="width: 9vw;" alt="html-logo-2">
+                        <img class="card-img" src="images/html-logo.png" alt="html-logo-2">
                     </div>
                     <div class="card-text">
                         <b>HTML:</b> I have 3 years of extensive experience with HTML, the foundation for building web page structures and content. </p>
@@ -81,7 +79,7 @@
                 </div>
                 <div id="tech-css" class="card bg-dark p-3 m-3" style="width:18rem">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/css-logo.png" style="width: 9vw;" alt="css-logo-2">
+                        <img class="card-img" src="images/css-logo.png" alt="css-logo-2">
                     </div>
                     <div class="card-text">
                         <b>CSS:</b> I have 3 years of good experience with CSS, allowing me to style and design the visual appearance of web pages.</p>
@@ -89,7 +87,7 @@
                 </div>
                 <div id="tech-js" class="card bg-dark p-3 m-3" style="width: 18rem;">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/js-logo.png" style="width: 9vw;" alt="js-logo-2">
+                        <img class="card-img" src="images/js-logo.png" alt="js-logo-2">
                     </div>
                     <div class="card-text">
                         <b>JavaScript:</b> I have a 2 year working knowledge of JavaScript, for adding interactivity and dynamic behavior to web pages.</p>
@@ -99,7 +97,7 @@
             <div class="text_secondLine">
                 <div id="tech-php" class="card bg-dark p-3 m-3" style="width:18rem">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/php-logo.png" style="width: 9vw;" alt="html-logo-2">
+                        <img class="card-img" src="images/php-logo.png" alt="html-logo-2">
                     </div>
                     <div class="card-text">
                         <b>PHP:</b> I am familiar with PHP, currently working with it for 1 year, as a server-side scripting language for creating dynamic web content.</p>
@@ -107,7 +105,7 @@
                 </div>
                 <div id="tech-mysql" class="card bg-dark p-3 m-3" style="width:18rem">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/mysql-logo.png" style="width: 9vw;" alt="css-logo-2">
+                        <img class="card-img" src="images/mysql-logo.png" alt="css-logo-2">
                     </div>
                     <div class="card-text">
                         <b>MySQL:</b> I have an understanding of MySQL, with me working with it for a little over 1 year, as a popular relational database management system.</p>
@@ -115,12 +113,13 @@
                 </div>
                 <div id="tech-java" class="card bg-dark p-3 m-3" style="width: 18rem;">
                     <div class="card-body d-flex align-items-center justify-content-center">
-                        <img class="card-img" src="images/java-logo.png" style="width: 8vw;" alt="js-logo-2">
+                        <img class="card-img" src="images/java-logo.png" style="width: 9vw;" alt="js-logo-2">
                     </div>
                     <div class="card-text">
                         <b>Java:</b> I have 2 years of experience with Java, a versatile programming language used for various applications.</p>
                     </div>
                 </div>
+            </div>
             </div>
         </article>
         <article id="soft">
@@ -161,7 +160,7 @@
         <h1>PROJECTS</h1>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="#"><img src="images/portfolio/2.webp" alt="" class="d-block img-fluid"></a>
+            <a href="#"><img src="images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
             <p>Project Placeholder</p>
           </div>
           <div class="carousel-item">
@@ -169,7 +168,7 @@
             <p>Coaching Portfolio Website</p>
           </div>
           <div class="carousel-item">
-            <a href="#"><img src="images/portfolio/2.webp" alt="" class="d-block img-fluid"></a>
+            <a href="#"><img src="images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
             <p>Project Placeholder</p>
           </div>
         </div>
@@ -196,7 +195,7 @@
                         <input type="email" placeholder="email@domain.net">
                     </div>
                     <div class="inputBx">
-                        <textarea id="textarea" name="contact" rows="4" style="width:300px" placeholder="Message here..."></textarea>
+                        <textarea id="textarea" name="contact" rows="4" placeholder="Message here..."></textarea>
                     </div>
                     <div class="inputBx">
                         <input type="submit" value="Send">
@@ -235,18 +234,15 @@
                     if(i===5){
                         i=0;
                     } 
-                }
+                };
             const intervalId = setInterval(changeText,7000);
     </script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 
 <!--
     todo:
-    localize for different languages
-    >responsivity<
-    localization
 
-    elements popping up when first visiting? :> pretty difficult, probably won't make it work
 -->

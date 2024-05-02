@@ -3,9 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ECL Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <p>asdfsadf</p>
+    <header id="header">
+        <h1 style="font-family:'Courier New', Courier, monospace;">ECL</h1>
+        <nav id="links">
+            <ul>
+                <li><a href="#header"><img src="../images/light/home.png" alt="hdr-ico"></a></li>
+                <li><a href="#about-me"><img src="../images/light/user.png" alt="about-ico"></a></li>
+                <li><a href="#portfolio"><img src="../images/light/globe.png" alt="skills-ico"></a></li>
+                <li><a href="#contact"><img src="../images/light/phone-call.png" alt="contact-ico"></a></li>
+            </ul>
+        </nav>
+        <nav id="lang">
+            <ul>
+                <li><a href="../index.html"><img src="../images/united-kingdom.png" alt="en"></a></li>
+                <li><a href="../cs/index.cs.html"><img src="../images/czech-republic.png" alt="cs"></a></li>
+                <li><a href="../de/index.de.html"><img src="../images/germany.png" alt="de"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="banner" class="particles-and-nodes">
+        <canvas id="particles-canvas"></canvas>
+        <div class="banner-content">
+            <!--logo prone to change:> digga ich bin keinen Grafikdesigner-->
+            <img src="../images/logo.png" alt="logo">
+            <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ERNST CHRISTOPH LESCHKA</h1>
+            <span id="typewriter"><h2>Vítejte na mém portfoliu.</h2></span>
+        </div>
+        <div id="scroll-down">
+            <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </main>
+    <script src="../particles.js"></script>
+    <section id="about-me">
+        <h5 style="color:#a7a7a7;">O MNĚ</h5>
+        <p>Ernst Christoph Leschka jest jméno mé. Jsem student informatiky v Plzni s láskou ke všemu okolo počítačů. Moje zaměření je hlavně vývoj webu a vývoj softwaru, ale taktéž mám rád další témata okolo, třeba IoT! Mám zkušenosti se škálou technologíí, jako například HTML, CSS, JavaScript, PHP, MySQL, Java... Mluvím plynule anglicky and snažím se plynulosti dosáhnout i u německého jazyka. V tomto portfoliu lze najít mou práci, zjistit více o mých zkušenostech a možnost mne kontaktovat. Stále se učím a rozvíjím a zajímá mě, co budu mít možnost dělat v budoucnu. Pokud máte otázky nebo se chcete na něčem domluvit, můžete mě kontaktovat.</p>
+        <div>
+        <p>
+        <img src="../images/light/print.png" alt="print"><a href="Leschka CV.pdf" target="_blank">Tisk CV</a>
+        </p>
+        <p>
+        <img src="../images/light/download.png" alt="download"><a href="Leschka CV.pdf" download="Leschka_CV.pdf">Stáhnout CV</a>
+        </p>
+        </div>
+    </section>
+    <section id="technology-carousel">
+        <!--  beeindrucken, also warum nicht  -->
+        <div class="slide-track">
+            <img src="../images/html-logo.png" alt="html">
+            <img src="../images/css-logo.png" alt="css">
+            <img src="../images/js-logo.png" alt="JavaScript">
+            <img src="../images/php-logo.png" alt="php">
+            <img src="../images/mysql-logo.png" alt="mysql">
+            <img src="../images/java-logo.png" alt="java">
+        </div>
+    </section>
+    <section id="skills">
+        <section id="skills">
+            <article id="tech">
+              <h1 style="color:#a7a7a7">TECHNOLOGIE</h1>
+              <div class="text_firstLine">
+                <div id="tech-html" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/html-logo.png" style="width: 9vw;" alt="HTML-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>HTML:</b> Mám 3 roky rozsáhlých zkušeností s HTML, základem pro budování struktury a obsahu webových stránek.</p>
+                  </div>
+                </div>
+                <div id="tech-css" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/css-logo.png" style="width: 9vw;" alt="CSS-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>CSS:</b> Mám 3 roky dobrých zkušeností s CSS pro stylizaci vzhledu webových stránek.</p>
+                  </div>
+                </div>
+                <div id="tech-js" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/js-logo.png" style="width: 9vw;" alt="JS-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>JavaScript:</b> Mám 2 roky praktických zkušeností s JavaScriptem pro přidávání interaktivních prvků a dynamického chování webových stránek.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text_secondLine">
+                <div id="tech-php" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/php-logo.png" style="width: 9vw;" alt="PHP-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>PHP:</b> Základní znalosti PHP, pracuji s ním 1 rok, serverový skriptovací jazyk pro vytváření dynamického webového obsahu.</p>
+                  </div>
+                </div>
+                <div id="tech-mysql" class="card bg-dark p-3 m-3" style="width:18rem">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/mysql-logo.png" style="width: 9vw;" alt="MySQL-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>MySQL:</b> Základní znalosti MySQL, s čímž dělám něco více než 1 rok, populární relační databázový systém.</p>
+                  </div>
+                </div>
+                <div id="tech-java" class="card bg-dark p-3 m-3" style="width: 18rem;">
+                  <div class="card-body d-flex align-items-center justify-content-center">
+                    <img class="card-img" src="../images/java-logo.png" style="width: 8vw;" alt="Java-Logo">
+                  </div>
+                  <div class="card-text">
+                    <b>Java:</b> Mám 2 roky zkušeností s Javou, univerzálním programovacím jazykem pro různé aplikace.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          
+        <article id="soft">
+            <div>
+                <h2>Čeština</h2>
+                <h2>Angličtina</h2>
+                <h2>Němčina</h2>
+            </div>
+            <div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(214, 76, 76);" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100">B2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(0, 112, 177);" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100">C1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(169, 5, 202);" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100">C2</div>
+                </div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(214, 76, 76);" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100">B2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(0, 112, 177);" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100">C1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #454545;" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress" style="width: 50vw; height: 2.76vh;">
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(202, 147, 111);" aria-valuenow="16.6666666667%" aria-valuemin="0" aria-valuemax="100">A1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(231, 197, 3);" aria-valuenow="33.3333333333%" aria-valuemin="0" aria-valuemax="100">A2</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: rgb(65, 177, 0);" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100">B1</div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #8c8c8c;" aria-valuenow="66.6666666667%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #bfbfbf;" aria-valuenow="83.3333333333%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 16.6666666667%; background-color: #454545;" aria-valuenow="100%" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="portfolio" class="carousel slide" data-bs-ride="carousel">
+        <h1>Projekty</h1>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img src="../images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
+            <p>Project Placeholder</p>
+          </div>
+          <div class="carousel-item">
+            <a href="https://zdenkalindenbergova.cz/"><img src="../images/portfolio/1.png" alt="ZL" class="d-block img-fluid"></a>
+            <p>Koučink Portfolio</p>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img src="../images/portfolio/2.jpg" alt="" class="d-block img-fluid"></a>
+            <p>Project Placeholder</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolio" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolio" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+      </section>
+    <section id="contact">
+        <!--https://codepen.io/Gogh/pen/gOqVqBx -->
+        <div class="form">
+            <div class="ring">
+                <i style="--clr:#ffffff;"></i>
+                <i style="--clr:#ff0057;"></i>
+                <i style="--clr:#fffd44;"></i>
+                <div class="login">
+                    <form action="mailto:leschkae@spseplzen.cz" method="post" enctype="text/plain">
+                    <h2>Kontakt</h2>
+                    <div class="inputBx">
+                        <input type="email" placeholder="email@domain.net">
+                    </div>
+                    <div class="inputBx">
+                        <textarea id="textarea" name="contact" rows="4" style="width:300px" placeholder="Text sem..."></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Poslat">
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div><img src="../images/light/linkedin.png" alt=""><a href="https://www.linkedin.com/in/ernst-christoph-leschka-52385421b/">LinkedIn</a></div>
+            <div><img src="../images/light/instagram.png" alt=""><a href="https://www.instagram.com/christoph1j2">Instagram</a></div>
+            <div><img src="../images/light/twitter.png" alt=""><a href="https://www.twitter.com/christoph1j2">TwitterX</a></div>
+        </div>
+    </section>
+    <footer>
+        <p>© <span id="year">2024</span> ECL <a href="../attributes.html">Attributions</a></p>
+    </footer>
+    <a href="#" class="back-to-top"></a>
+    <script>
+        function year() {
+            const date = new Date();
+            let year = date.getFullYear();
+            console.log(year);
+            document.getElementById('year').innerHTML = year;
+        }
+    </script>
+    <script>
+        const textContainer = document.getElementById("typewriter");
+        let string = ['Vývoj Webu','Vývoj Softwaru','Správa Databáze','Frontend Vývoj','Backend Vývoj'];
+        i=0;
+                    
+            function changeText(){
+            console.log("jetzt");
+                textContainer.innerHTML = '<h2>'+string[i]+'</h2>';
+                i++;
+                    if(i===5){
+                        i=0;
+                    } 
+                }
+            const intervalId = setInterval(changeText,7000);
+    </script>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
